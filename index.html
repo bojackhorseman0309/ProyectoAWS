@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pizza HoTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<!-- bootstrap scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
+		<!-- nuestros estilos-->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<!-- font awesome library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		
+		<!-- primer imagen de index-->
+		<div class="primer_imagen">
+			<h3 class="header"><i><b>¡Bienvenido a Pizza HoTML!</b><br/>La mejor pizza del mercado, siempre a su alcance.</i></h3>
+		</div>
+		
+		<!-- Navbar de la pagina -->
+		<div id="navbar">
+			<nav class="navbar navbar-expand-md navbar-light">
+				<a class="navbar-brand" href="#"><img src="imagenes/logo.png" id="logo_img"></a>
+
+				<!-- boton para colapsar navbar-->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- links del navbar -->
+				<div class="collapse navbar-collapse" id="links">
+					<ul class="navbar-nav">
+						<li><a class="nav-link" href="#ordenar">Ordenar</a></li>
+						<li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+						<li><a class="nav-link" href="#contacto">Contáctenos</a></li>
+					</ul>
+				</div>
+			</nav> 	
+		</div>
+
+		<!-- ordenar -->
+		<div id="ordenar"></div>
+		<div class="container-fluid">
+			<div class="informacion">
+				<h1>¿Listo para pedir su pizza?</h1>
+				<h6> Si ya es nuestro cliente, inicie sesión. De lo contrario, registrese</h6>
+				<button type="submit" class="btn sesionBtn" name="registrarse" id="registrarse" data-toggle="modal" data-target="#registrarseModal">Registrarse</button>
+				<button type="submit" class="btn sesionBtn" name="iniciarSesion" id="iniciarSesion" data-toggle="modal" data-target="#iniciarSesionModal">Iniciar sesión</button>
+			</div>
+		</div>
+
+		<!-- segunda imagen -->
+		<div class="segunda_imagen"></div>
+
+		<!-- nosotros -->
+		<div id="nosotros"></div>
+		<div class="container-fluid">
+			<div class="informacion">
+				<h3>&#x1F1E8;&#x1F1F7; Nuestra historia &#x1F1E8;&#x1F1F7;</h3>
+				<p>
+					Somos una pizzería 100% costarricense que empezó en las aulas de la Universidad Fidélitas. <br />
+					4 estudiantes decidieron emprender en una pizzería después de graduarse como administradores de negocios e ingenieros industriales, creando Pizza HoTML.
+					Siempre con los vegetales más frescos, la mejor carne del mercado, la salsa natural y el clásico pan de pizza artesanal hecho a mano por nuestros artesanos le
+					darán a usted la mejor pizza que haya probado.
+				</p>
+			</div>
+		</div>
+
+		<!-- tercera imagen-->
+		<div class="tercera_imagen"></div>
+
+		<!-- contactenos -->
+		<div id="contacto"></div>
+		<div class="container-fluid">
+			<div class="informacion">
+				<h3>¡Contáctenos!</h3>
+				<p>Escribanos al correo electronico pizza@hotml.com o llámenos al 2345-6789.</p>
+				<hr id="separacion"/>
+				<h5>Síganos en nuestras redes</h5>
+				<div id="redes_sociales" style="text-align: center; font-size: 20px">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-google-plus"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-snapchat"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+				</div>
+			</div>
+		</div>
+
+		<hr/>
+
+		<!-- pie de pagina -->
+		<footer>
+			<p style="text-align: center">Diseño y desarrollo por AWS Proyecto &copy; 2018</p>
+		</footer>
+
+		<!-- Modal para registrarse -->
+		<div class="modal fade bg-dark text-white" id="registrarseModal" tabindex="-1" role="dialog" aria-labelledby="registrarseModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title text-dark">Registre sus datos e ingrese</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<div id="resultados"></div>
+						<div class="form-group" id="nombreDiv">
+							<label for="nombre" class="text-dark">Nombre:</label>
+							<input autofocus autocomplete="off" type="text" class="form-control" id="nombre" placeholder="Su nombre" name="nombre" required>
+						</div>
+						<div id="nombreErr"></div>
+						<div class="form-group" id="primerApellidoDiv">
+							<label for="primerApellido" class="text-dark">Primer apellido:</label>
+							<input autocomplete="off" type="text" class="form-control" id="primerApellido" placeholder="Su primer apellido" name="primerApellido" required>
+						</div>
+						<div id="primerApellidoErr"></div>
+						<div class="form-group" id="segundoApellidoDiv">
+							<label for="segundoApellido" class="text-dark">Segundo apellido:</label>
+							<input autocomplete="off" type="text" class="form-control" id="segundoApellido" placeholder="Su segundo apellido" name="segundoApellido">
+						</div>
+						<div class="form-group" id="telefonoDiv">
+							<label for="telefono" class="text-dark">Telefono:</label>
+							<input autocomplete="off" type="tel" class="form-control" id="telefono" placeholder="Su telefono como 1234-5678" name="telefono">
+						</div>
+						<div id="telefonoErr"></div>
+						<div class="form-group" id="emailDiv">
+							<label for="email" class="text-dark">Correo:</label>
+							<input autocomplete="off" type="email" class="form-control" id="email" placeholder="su@correo.com" name="email" required>
+						</div>
+						<div id="emailErr"></div>
+						<div class="form-group" id="pwdDiv">
+							<label for="pwd" class="text-dark">Contraseña:</label>
+							<input autocomplete="off" type="password" class="form-control" id="pwd" placeholder="Digite su contraseña" name="pwd">
+						</div>
+						<div id="pwdErr"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-success" onclick="guardarCliente('guardarCliente')">Registrarme</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fin de modal para registro -->
+
+		<!-- Modal para iniciar sesión -->
+		<div class="modal fade bg-dark text-white" id="iniciarSesionModal" tabindex="-1" role="dialog" aria-labelledby="iniciarSesionModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title text-dark">Inicie sesión con sus credenciales</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<div id="miResultado"></div>
+						<div class="form-group" id="emailSesionDiv">
+							<label for="emailSesion" class="text-dark">Correo:</label>
+							<input autocomplete="off" type="email" class="form-control" id="emailSesion" placeholder="su@correo.com" name="emailSesion" required>
+						</div>
+						<div id="emailSesionErr"></div>
+						<div class="form-group" id="pwdSesionDiv">
+							<label for="pwdSesion" class="text-dark">Contraseña:</label>
+							<input autocomplete="off" type="password" class="form-control" id="pwdSesion" placeholder="Digite su contraseña" name="pwdSesion">
+						</div>
+						<div id="pwdSesionErr"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-success" onclick="iniciarSesion('iniciarSesion')">Iniciar sesión</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fin de modal para iniciar sesion-->
+
+
+		<!-- javascript nuestro -->
+		<script src="javascript/js.js"></script>
+		
+	</body>
+
+</html>

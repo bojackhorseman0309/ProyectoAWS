@@ -1,0 +1,124 @@
+body, html{
+	height: 100%;
+	font-family: 'Abel', sans-serif;
+}
+
+#logo_img{
+	max-width: 100px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+/* letras */ 
+
+p{
+	font-family: 'Abel', sans-serif;
+	font-size: 17px;
+}
+
+/* fin de letras */
+
+.informacion{
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+/* hr */
+#separacion {
+	background-color: black;
+	margin-top: 3px;
+	margin-bottom: 8px;
+    width: 20%;
+}
+
+hr{
+    background-color: black;
+	margin-top: 3px;
+	margin-bottom: 8px;
+}
+
+/* fin hr */
+
+/* navbar */ 
+#navbar a{
+    color: black;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+}
+
+#navbar a:hover{
+    color: #7f7f7f;
+}
+
+/* fin navbar */ 
+
+/* botones */ 
+button{
+    font-family: 'Abel', sans-serif;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: black;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+/* fin botones */ 
+
+/* tabla */
+
+table{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* fin de tabla */
+
+
+/* redes sociales */ 
+.fa{
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.fa-facebook:hover{
+	color: #3B5998;
+	text-decoration: none;
+}
+
+.fa-twitter:hover{
+	color: #1DA1F2;
+	text-decoration: none;
+}
+
+.fa-google-plus:hover{
+	color: #DB4437;
+	text-decoration: none;
+}
+
+.fa-pinterest:hover{
+	color: #BD081C;
+	text-decoration: none;
+}
+
+.fa-snapchat:hover{
+	color: #FFFC00;
+	text-decoration: none;
+}
+
+.fa-instagram:hover{
+	color: #cd486b;
+	text-decoration: none;
+}
+
+/* fin redes sociales */ 

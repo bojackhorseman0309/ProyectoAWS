@@ -1,0 +1,171 @@
+body, html{
+	height: 100%;
+	background-color: black;
+	color: white;
+	font-family: 'Abel', sans-serif;
+}
+.primer_imagen{
+	background-image: url("../imagenes/pizza_slice.jpg");
+    height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.segunda_imagen{
+	background-image: url("../imagenes/pizza_fire.jpg");
+    height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tercera_imagen{
+	background-image: url("../imagenes/pizza_background.jpg");
+    height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+	position: absolute;
+	z-index: 1000;
+	left: 150px;
+	margin-top: 150px;
+	color: black;
+}
+
+/* letras */ 
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Indie Flower', cursive;
+}
+
+p{
+	font-family: 'Abel', sans-serif;
+	font-size: 17px;
+}
+
+/* fin de letras */
+.informacion{
+	margin-top: 100px;
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+/* hr */
+#separacion {
+	background-color: white;
+	margin-top: 3px;
+	margin-bottom: 8px;
+    width: 20%;
+}
+
+hr{
+	background-color: white;
+	margin-top: 3px;
+	margin-bottom: 8px;
+}
+
+/* fin hr */
+
+/* navbar */ 
+#navbar a{
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	color: white;
+}
+
+#navbar a:hover{
+	color: #7f7f7f;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+
+/* fin navbar */ 
+
+/* botones */ 
+button{
+	font-family: 'Indie Flower', cursive;
+}
+
+.sesionBtn {
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	padding: 10px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.sesionBtn:hover {
+	border: 1px solid #d86b3e;
+	color:#d86b3e;
+}
+
+/* fin botones */ 
+
+#logo_img{
+	max-width: 100px;
+}
+
+a {
+	color: #8bb6f9;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+/* redes sociales */ 
+.fa{
+  color:white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.fa-facebook:hover{
+	color: #3B5998;
+	text-decoration: none;
+}
+
+.fa-twitter:hover{
+	color: #1DA1F2;
+	text-decoration: none;
+}
+
+.fa-google-plus:hover{
+	color: #DB4437;
+	text-decoration: none;
+}
+
+.fa-pinterest:hover{
+	color: #BD081C;
+	text-decoration: none;
+}
+
+.fa-snapchat:hover{
+	color: #FFFC00;
+	text-decoration: none;
+}
+
+.fa-instagram:hover{
+	color: #cd486b;
+	text-decoration: none;
+}
+
+/* fin redes sociales */ 
